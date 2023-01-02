@@ -106,3 +106,21 @@ const pillBox = {
         // logic
     },
 };
+
+const cat = {
+    name: 'Stephen',
+    color: 'morange',
+    meow() {
+        console.log("MEOW MEOW MEOW");
+        console.log(`${this.name} meowed`);
+    }
+}
+
+cat.meow(); // 'this' refers to cat object
+	// > "MEOW MEOW MEOW"
+	// > "Stephen meowed"
+
+const meow2 = cat.meow;
+meow2(); // 'this referes to the window object.
+	// > "MEOW MEOW MEOW"
+	// > " meowed"
