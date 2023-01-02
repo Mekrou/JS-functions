@@ -83,3 +83,26 @@ function makeBetweenFunc(min, max) {
 }
 
 let isBetween = makeBetweenFunc(1, 50);
+
+// methods
+
+const math = {
+    multiply : function(x, y) {
+        return x * y;
+    },
+    divide : function(x, y) {
+        return x / y;
+    },
+    square : function(x) {
+        return x * x;
+    }
+};
+
+// shorthand
+
+const pillBox = {
+    pills : ['strattera', 'solgar'],
+    sortMeds(arrayOfPills) {
+        // logic
+    },
+};
