@@ -116,11 +116,20 @@ const cat = {
     }
 }
 
-cat.meow(); // 'this' refers to cat object
+// cat.meow(); // 'this' refers to cat object
 	// > "MEOW MEOW MEOW"
 	// > "Stephen meowed"
 
-const meow2 = cat.meow;
-meow2(); // 'this referes to the window object.
+// const meow2 = cat.meow;
+// meow2(); // 'this referes to the window object.
 	// > "MEOW MEOW MEOW"
 	// > " meowed"
+
+// Try catch statements
+try {
+    hello.toUpperCase();
+} catch {
+    console.log("error");
+}
+
+console.log("this code still runs!");
